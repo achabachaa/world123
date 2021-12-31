@@ -4,7 +4,7 @@ import plotly.express as px
 import seaborn as sns
 df = pd.read_excel("world-happiness-report-2021.xlxs")#For CSV File
 df = pd.read_csv("world-happiness-report-2021.csv")
-st.title(“World Happiness Index 2021:”)
+st.title(World Happiness Index 2021:)
 st.image(“https://images.pexels.com/photos/573259/pexels-photo-573259.jpeg?cs=srgb&dl=pexels-matheus-bertelli-573259.jpg&fm=jpg", caption=’World Happiness Dataset’)
          
 country_list = ["All","Western Europe", "South Asia", "Southeast Asia", "East Asia", "North America and ANZ","Middle East and North Africa", "Latin America and Caribbean","Central and Eastern Europe","Commonwealth of Independent States","Sub-Saharan Africa"]select = st.sidebar.selectbox('Filter the region here:', country_list, key='1')if select =="All":
